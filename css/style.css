@@ -1,0 +1,100 @@
+/* Resets. */
+
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+p + p {
+  margin-top: 1em;
+}
+
+/* Globals. */
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-kerning: normal;
+  margin: 0;
+}
+
+/* Components. */
+
+.hero-block {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 30px 20px 30px 30px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+  .hero-block > .portrait {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: left top;
+  }
+
+  .hero-block > .title {
+    font-size: 32px;
+    line-height: 1.1em;
+    display: block;
+    margin: 0;
+  }
+
+  .hero-block > .title > .large {
+    font-size: 178px;
+    line-height: 0.8em;
+    letter-spacing: -8px;
+    display: block;
+    margin-left: -18px;
+  }
+
+.main-block {
+  background-color: white;
+  padding: 30px;
+  font-size: 22px;
+}
+
+.section-block + .section-block {
+  margin-top: 30px;
+}
+
+  .section-block > .title {
+    font-size: 108px;
+    line-height: 0.77em;
+    letter-spacing: -5px;
+    margin: 0 0 12px -8px;
+  }
+
+  .section-block > .title.-smaller {
+    font-size: 60px;
+    letter-spacing: -2px;
+  }
+
+  .section-block .warts {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+  }
+
+._kerning-tight {
+  letter-spacing: -0.08em;
+}
+
+._kerning-tighter {
+  letter-spacing: -0.11em;
+}
